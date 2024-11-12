@@ -1,16 +1,40 @@
-# Project Overview
+# BankClientChurn
 
-## **Introduction**
-In today's competitive market landscape, customer retention plays a critical role in sustaining business growth and profitability. Customer churn, the process of losing customers to competitors, is a significant concern for industries such as banking, telecommunications, and retail. This project focuses on building a predictive model to identify customers at risk of churning, enabling proactive strategies for customer retention.
-
-The dataset provided consists of customer-level information, including demographic data, account balance, tenure, product usage, and activity levels. Using this data, the objective is to conduct a comprehensive analysis, explore underlying patterns, and build a machine learning model to predict the likelihood of customer churn.
+## Project Overview
+This project focuses on the exploratory data analysis (EDA) and predictive modeling of customer churn for a bank's client dataset. The primary goal is to analyze customer behavior and develop a machine learning model to predict whether a client will leave the bank (churn). The repository includes detailed data exploration, feature engineering, and model building steps to provide actionable insights and accurate predictions.
 
 ---
 
-## **Objective**
-The primary objective of this project is to:
-1. Analyze the dataset to uncover insights about customer behavior and factors contributing to churn.
-2. Conduct Exploratory Data Analysis (EDA) to understand data distributions, correlations, and potential anomalies.
-3. Prepare the data for machine learning by addressing missing values, encoding categorical features, and balancing class distributions.
-4. Build, evaluate, and deploy a machine learning model capable of predicting customer churn with high accuracy and interpretability.
-5. Provide actionable insights and recommendations based on the findings to improve customer retention strategies.
+## Key Features
+- **Exploratory Data Analysis (EDA):**
+  - Comprehensive visualization and statistical analysis of client data.
+  - Identification of key factors influencing customer churn.
+- **Machine Learning Modeling:**
+  - Balanced and unbalanced data experiments to optimize prediction accuracy.
+  - Random Forest Classifier implementation with evaluation metrics such as accuracy, ROC-AUC, precision, and recall.
+- **API Development:**
+  - A FastAPI and Flask application to deploy the trained model for real-world usage.
+  - Support for real-time predictions via HTTP endpoints.
+- **Visualization:**
+  - Lift Curve, ROC Curve, Precision-Recall Curve, and feature importance visualizations.
+
+---
+
+## Repository Structure
+
+
+BankClientChurn/
+├── data/                           # Contains raw and processed datasets
+│   ├── Churn_Modeling.csv          # Original dataset
+│   ├── ModelingDataSet.csv.csv     # Cleaned and prepared dataset
+├── deploy/                         # Scripts for model deployment
+│   ├── API.py                      # Flask-based API implementation
+|   ├── data.json                   # Structure of JSON file for use in deployment
+|   ├── Test deployment of our models.pdf # Result of API testing
+├── models/                         # Trained models and saved artifacts
+│   └── random_forest_model.pkl     # Pickled Random Forest model
+├── PrimaryAnalysing_EDA.ipynb      # EDA and feature exploration
+├── ModelingClientChurn.ipynb       # Model training and evaluation
+├── exportToHTML/                   # Exported HTML and PDF versions of notebooks (optional)
+├── requirements.txt                # List of Python dependencies
+└── README.md                       # Project overview and description
