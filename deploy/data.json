@@ -1,0 +1,12 @@
+{
+    "CreditScore": 600,
+    "Geography": 0,
+    "Gender": 1,
+    "Age": 40,
+    "Tenure": 3,
+    "Balance": 60000,
+    "NumOfProducts": 2,
+    "HasCrCard": 1,
+    "IsActiveMember": 1,
+    "EstimatedSalary": 50000
+}
