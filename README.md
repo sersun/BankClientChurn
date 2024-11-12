@@ -58,3 +58,11 @@ Send a POST request to /predict/ with JSON input:
 }
 ```
 
+# Results and Insights
+## EDA Highlights:
+Age, balance, and number of products were critical indicators of churn.
+Visualized client distribution by geography, gender, and tenure.
+
+## Model Performance:
+Achieved 98% accuracy and a 0.996 ROC-AUC score on balanced datasets.
+High precision and recall for both churn and non-churn classes.
