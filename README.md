@@ -32,3 +32,28 @@ This project focuses on the exploratory data analysis (EDA) and predictive model
 git clone https://github.com/sersun/BankClientChurn.git
 cd BankClientChurn
 
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3. Run the Flask app
+```bash
+python deploy/API.py
+
+### 4. Predict Using the API
+Send a POST request to /predict/ with JSON input:
+
+```json
+{
+  "CreditScore": 600,
+  "Geography": "France",
+  "Gender": "Male",
+  "Age": 40,
+  "Tenure": 5,
+  "Balance": 50000,
+  "NumOfProducts": 2,
+  "HasCrCard": 1,
+  "IsActiveMember": 1,
+  "EstimatedSalary": 60000
+}
+
+
