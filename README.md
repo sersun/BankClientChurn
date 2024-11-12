@@ -21,20 +21,14 @@ This project focuses on the exploratory data analysis (EDA) and predictive model
 ---
 
 ## Repository Structure
+![image](https://github.com/user-attachments/assets/5dde46af-1d30-4f95-9143-c92b6ee494fb)
 
 
-BankClientChurn/
-├── data/                           # Contains raw and processed datasets
-│   ├── Churn_Modeling.csv          # Original dataset
-│   ├── ModelingDataSet.csv.csv     # Cleaned and prepared dataset
-├── deploy/                         # Scripts for model deployment
-│   ├── API.py                      # Flask-based API implementation
-|   ├── data.json                   # Structure of JSON file for use in deployment
-|   ├── Test deployment of our models.pdf # Result of API testing
-├── models/                         # Trained models and saved artifacts
-│   └── random_forest_model.pkl     # Pickled Random Forest model
-├── PrimaryAnalysing_EDA.ipynb      # EDA and feature exploration
-├── ModelingClientChurn.ipynb       # Model training and evaluation
-├── exportToHTML/                   # Exported HTML and PDF versions of notebooks (optional)
-├── requirements.txt                # List of Python dependencies
-└── README.md                       # Project overview and description
+---
+
+## How to Use
+### 1. Clone the Repository
+```bash
+git clone https://github.com/sersun/BankClientChurn.git
+cd BankClientChurn
+
